@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/94236a35a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="signUp.css">
+    <link rel="icon" href="Imagenes/icono2.ico">
+    <title>Sing Up</title>
+    <link rel="icon" href="/Imagenes/IconoLibro.png">
+
+</head>
+<body>
+    <form action="#" class="form">
+        <h1>Registrarse</h1>
+        <div class="container">
+
+            <div class="container-inputs">
+                <i class="fa-solid fa-user icon"></i>
+                <input type="text" name="name" id="nombre" placeholder="Ingrese su nombre" required>
+            </div>
+
+            <div class="container-inputs">
+                <i class="fa-solid fa-phone icon"></i>
+                <input type="tel" name="tel" id="telefono" placeholder="Ingrese su número telefónico" required>                
+            </div>
+
+            <div class="container-inputs">
+                <i class="fa-solid fa-envelope icon"></i>
+                <input type="email" name="mail" id="email" placeholder="Ingrese su correo" required>                 
+            </div>
+
+            <div class="container-inputs">
+                <i class="fa-solid fa-lock icon"></i>
+                <input type="password" name="password" id="pass" placeholder="Ingrese una contraseña">                
+            </div>
+
+            <div class="button">
+                <input type="checkbox" id="terminos">
+                <label for="terminos">Acepto términos y condiciones.</label>
+                <input type="submit" value="Registrarse">
+                <p>¿Ya tiene una cuenta? <a class="link" href="./login.html">Iniciar sesión</a></p>
+                <p>Volver a <a class="link" href="./index.html">Inicio</a></p>
+
+            </div>
+        </div>
+    </form>
+
+          <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(/Imagenes/FondoRegistrarse3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #322C2B;
+}
+
+.form{
+    background-color: #E4C59E;
+    padding: 15px;
+    
+}
+h1{
+    font-size: 2rem;
+    font-family:Merriweather;
+    color: #322C2B;
+    text-align: center;
+
+}
+.container-inputs{
+    font-size: 25px;
+    color: #322C2B;
+    border: solid 1px #322C2B;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+input[type="text"]{
+    font-size: 1.2rem;
+    font-family:Merriweather;
+    border: none;
+    margin-left: 10px;
+    width: 91%;
+    background-color: #E4C59E;
+}
+
+input[type="tel"]{
+    font-size: 1.2rem;
+    font-family:Merriweather;
+    border: none;
+    margin-left: 10px;
+    width: 91%;
+    background-color: #E4C59E;
+}
+
+input[type="email"]{
+    font-size: 1.2rem;
+    font-family:Merriweather;
+    border: none;
+    margin-left: 10px;
+    width: 91%;
+    background-color: #E4C59E;
+}
+
+input[type="password"]{
+    font-size: 1.2rem;
+    font-family:Merriweather;
+    border: none;
+    margin-left: 10px;
+    width: 91%;
+    background-color: #E4C59E;
+}
+
+.button{
+    margin-top: 20px;
+}
+
+input[type="submit"]{
+    width: 100%;
+    padding: 15px;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(23, 99, 122);
+    font-family:Merriweather;
+    border-radius: 7px;
+}
+input[type="submit"]:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(36, 143, 175);
+    font-weight: 700;
+    font-family:Merriweather;
+}
+
+p{
+    font-size: 1.2rem;
+    font-family:sans-serif;
+    text-align: center;
+}
+
+label{
+    font-size: 1.2rem;
+    font-family: sans-serif;    
+}
+
+.link{
+    color: blue;
+    text-decoration: none;    
+}
+.link:hover{
+    color: rgb(240, 10, 10);
+    font-size: 1.3rem;
+    font-weight: 700;   
+}
+
+/*Responsive*/
+@media screen and (min-width: 767px) {
+    .form{
+        margin: auto;
+        width: 500px;
+        margin-top: 50px;
+        padding: 10px;
+        border-radius: 25px;
+    }
+    
+    .container-inputs{
+        font-size: 19px;
+        padding: 10px;
+        margin-right: 20px;
+    }
+    
+    input[type="text"]{
+        width: 90%;
+        font-size: 18px;
+    }
+
+    input[type="tel"]{
+        width: 90%;
+        font-size: 18px;
+    }
+
+    input[type="email"]{
+        width: 90%;
+        font-size: 18px;
+    }
+
+    input[type="password"]{
+        width: 90%;
+        font-size: 18px;
+    }
+
+    input[type="submit"]{
+        width: 95%;
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 20px;
+        padding: 0px 15px;
+
+    }
+}

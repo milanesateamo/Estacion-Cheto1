@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*seccion inicio*/
+
+#inicio {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#inicio header {
+    width: 100%;
+    background-color: #202020;
+}
+
+#inicio header .contenido-header {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    position: relative;
+}
+
+.contenido-header nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contenido-header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.contenido-header .logo {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 665;
+    font-style: normal;
+    color: #fffb05;
+    font-size: 15px;
+}
+
+.contenido-header nav ul li {
+    text-align: center;
+}
+
+.contenido-header nav ul li i {
+    display: block;
+    color: #a8a8a8;
+    margin-bottom: 10px;
+}
+
+.contenido-header nav ul li a {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 665;
+    font-style: normal;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0px 20px;
+    padding: 10px 2vw; 
+    /*espacio que abarca al pasar por encima el mouse*/
+}
+
+.contenido-header nav ul li a:hover {
+    background-color: #fffb05;
+    color: #000000;
+}
+
+/*icons*/
+.contenido-header .icons a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.contenido-header .icons a:hover {
+    color: #fffb05;
+}
+
+/*imagen fondo*/
+
+#inicio .fondo {
+    background-image: url('./imagenes/hamburguesas.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+#inicio .fondo .contenido {
+    max-width: 600px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 665;
+    font-style: normal;
+}
+
+#inicio .fondo h2 {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 665;
+    font-style: normal;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#inicio .fondo p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#inicio .fondo button {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 665;
+    font-style: normal;
+    background-color: #fffb05;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#inicio .fondo button:hover {
+    background-color: #070707;
+}
+
+/* Dispositivos tablet (pantallas de 768px o menos) */
+@media (max-width: 768px) {
+    #inicio header .contenido-header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .contenido-header nav {
+        position: static;
+        transform: none;
+        margin-top: 10px;
+    }
+
+    .contenido-header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenido-header nav ul li {
+        margin: 10px 0;
+    }
+
+    .contenido-header .icons {
+        margin-top: 10px;
+    }
+
+    #inicio .fondo .contenido {
+        padding: 10px;
+    }
+
+    #inicio .fondo h2 {
+        font-size: 28px;
+    }
+
+    #inicio .fondo p {
+        font-size: 16px;
+    }
+
+    #inicio .fondo button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Dispositivos móviles (pantallas de 480px o menos) */
+@media (max-width: 480px) {
+    .contenido-header nav ul li a {
+        padding: 10px 10px;
+        margin: 0px 5px;
+    }
+
+    .contenido-header .icons a {
+        padding: 8px 10px;
+    }
+
+    #inicio .fondo h2 {
+        font-size: 24px;
+    }
+
+    #inicio .fondo p {
+        font-size: 14px;
+    }
+
+    #inicio .fondo button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}

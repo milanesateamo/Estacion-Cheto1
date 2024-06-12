@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+}
+
+#inicio {
+    display: flex;
+    flex-direction: column;
+}
+
+#inicio header {
+    width: 100%;
+    background-color: #202020;
+}
+
+#inicio header .contenido-header {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    position: relative;
+}
+
+.contenido-header nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contenido-header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.contenido-header .logo {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 665;
+    font-style: normal;
+    display: block;
+    text-decoration: none;
+    color: #fffb05;
+    font-size: 15px;
+}
+
+.contenido-header nav ul li {
+    text-align: center;
+}
+
+.contenido-header nav ul li i {
+    display: block;
+    color: #a8a8a8;
+    margin-bottom: 10px;
+}
+
+.contenido-header nav ul li a {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 665;
+    font-style: normal;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0px 20px;
+    padding: 10px 2vw;
+}
+
+.contenido-header nav ul li a:hover {
+    background-color: #fffb05;
+    color: #000000;
+}
+
+.contenido-header .icons a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.contenido-header .icons a:hover {
+    color: #fffb05;
+}
+
+/* Dispositivos tablet (pantallas de 768px o menos) */
+@media (max-width: 768px) {
+    #inicio header .contenido-header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .contenido-header nav {
+        position: static;
+        transform: none;
+        margin-top: 10px;
+    }
+
+    .contenido-header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenido-header nav ul li {
+        margin: 10px 0;
+    }
+
+    .contenido-header .icons {
+        margin-top: 10px;
+    }
+}
+
+/* Sección ubicación */
+#ubicacion {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ubicacion-info {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 665;
+    font-style: normal;
+    display: block;
+    text-decoration: none;
+    width: 50%;
+    padding: 20px;
+}
+
+.ubicacion-info h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.ubicacion-info h3 a {
+    text-decoration: none;
+    color: #EEE5D9;
+    font-size: 28px;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.ubicacion-info h3 a:hover {
+    color: #d2b68a;
+}
+
+.ubicacion-info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Pie de página */
+.pie-pagina {
+    background-color: #1b1a1a;
+}
+
+.pie-pagina .grupo-1 {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 665;
+    font-style: normal;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 25px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .bloque h2 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.pie-pagina .grupo-1 .bloque p {
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.fa-brands {
+    border-radius: 100px;
+    color: #FF6500;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 10px;
+}
+
+.fa-brands:hover {
+    color: #e62e2E;
+}
+
+.pie-pagina .grupo-2 {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 665;
+    font-style: normal;
+    display: block;
+    text-decoration: none;
+    background-color: #fffb05;
+    padding: 10px;
+    text-align: center;
+    color: #000000;
+}
+
+.pie-pagina .grupo-1 .contacto {
+    
+    background-color: #1b1a1a;
+    text-align: left;
+    color: #ffffff;
+    padding: 10px -3px;
+}
+
+.pie-pagina .grupo-1 .contacto h2 {
+    
+    font-size: 18px;
+    margin-bottom: 15px;
+}
