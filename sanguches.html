@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacion Cheto</title>
+    <link rel="stylesheet" href="categorias.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="main-content">
+        <section id="inicio">
+            <header>
+                <div class="contenido-header">
+                    <div class="logo">
+                        <h1>ESTACION CHETO</h1>
+                    </div>
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="index.html">INICIO</a></li>
+                            <li><a href="categorias.html">CATEGORIAS</a></li>
+                            <li><a href="#favoritos">FAVORITOS</a></li>
+                            <li><a href="contacto.html">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <div class="icons">
+                        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="Login.html"><i class="fa-solid fa-user"></i></a>
+                        <a href="" id="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </header>
+        </section>
+        <section class="contenedor">
+            <div class="contenedor-items">
+                <div class="item">
+                    <span class="titulo-item">Lomo completo con papas</span>
+                    <img src="imagenes/lomitocompleto.jpg" alt="" class="img-item">
+                    <p> carne picada , cebolla, huevo duro, aceituna verde y aji .</p>
+                    <span class="precio-item">$15.000</span>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn" data-action="decrease">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn" data-action="increase">+</button>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <span class="titulo-item">Hamburguesa con papas</span>
+                    <img src="imagenes/hamburguesacompleta.jpg" alt="" class="img-item">
+                    <p>carne, cebolla, limón exprimido y condimentos.</p>
+                    <span class="precio-item">$15.000</span>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn" data-action="decrease">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn" data-action="increase">+</button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <span class="titulo-item">Sanguche de milanesa con papas</span>
+                    <img src="imagenes/sanguchedemila.jpg" alt="" class="img-item">
+                    <p> jamón, huevo duro, muzzarella.</p>
+                    <span class="precio-item">$15.000</span>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn" data-action="decrease">-</button>
+                        <span class="quantity">0</span>
+                        <button class="quantity-btn" data-action="increase">+</button>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+    </div>
+    <div class="sidebar" id="cart-sidebar">
+        <h2>Carrito de Compras</h2>
+        <div id="cart-content">
+            <p>Vacío</p>
+        </div>
+        <div id="cart-total">
+            <p>Total: $0</p>
+            <button class="pay-btn" id="pay-btn">Total a Pagar</button>
+        </div>
+        <button class="close-btn" id="close-sidebar">Cerrar</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
