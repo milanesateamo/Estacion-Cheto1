@@ -26,6 +26,10 @@ body {
 #inicio header {
     width: 100%;
     background-color: #202020;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 #inicio header .contenido-header {
@@ -34,7 +38,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 20px;
     position: relative;
 }
 
@@ -49,11 +53,13 @@ body {
     list-style: none;
 }
 
-.contenido-header .logo h1 {
+.contenido-header .logo {
     font-family: "Nunito", sans-serif;
-    font-weight: bold;
+    font-optical-sizing: auto;
+    font-weight: 665;
+    font-style: normal;
     color: #ffd622;
-    font-size: 1.5rem;
+    font-size: 15px;
 }
 
 .contenido-header nav ul li {
@@ -62,19 +68,21 @@ body {
 
 .contenido-header nav ul li a {
     font-family: "Nunito", sans-serif;
-    font-weight: bold;
+    font-optical-sizing: auto;
+    font-weight: 665;
+    font-style: normal;
+    display: block;
     text-decoration: none;
     color: #ffffff;
     margin: 0px 20px;
-    padding: 10px 2vw; /* Ajuste según tu diseño */
+    padding: 10px 2vw;
 }
 
 .contenido-header nav ul li a:hover {
     background-color: #ffd622;
-    color: #202020;
+    color: #000000;
 }
 
-/* Iconos */
 .contenido-header .icons a {
     display: inline-block;
     text-decoration: none;
@@ -88,88 +96,12 @@ body {
 }
 
 
-
-/* Estilos para dispositivos móviles y tablets */
-@media (max-width: 768px) {
-    #inicio header .contenido-header {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .contenido-header nav {
-        position: static;
-        transform: none;
-        margin-top: 10px;
-    }
-
-    .contenido-header nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contenido-header nav ul li {
-        margin: 10px 0;
-    }
-
-    .contenido-header .icons {
-        margin-top: 10px;
-    }
-
-
-    /* Mostrar y ocultar el menú desplegable */
-    .menu-toggle {
-        display: block;
-        cursor: pointer;
-    }
-
-    #nav {
-        display: none;
-        background-color: #202020;
-        position: absolute;
-        top: 60px; /* Ajuste según el tamaño de tu header */
-        left: 0;
-        width: 100%;
-        padding: 20px 0;
-        text-align: center;
-        z-index: 1000;
-    }
-
-    #nav.active {
-        display: block;
-    }
-
-    #nav ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    #nav ul li {
-        margin-bottom: 15px;
-    }
-
-    #nav ul li a {
-        font-family: "Nunito", sans-serif;
-        font-weight: bold;
-        font-size: 1rem; /* Ajuste según tu diseño */
-        color: #ffffff;
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
-
-    #nav ul li a:hover {
-        color: #ffd622;
-    }
-}
-
-/* Ocultar el menúToggle en pantallas grandes */
-@media (min-width: 769px) {
-    .menu-toggle {
-        display: none;
-    }
-}
-
 /*PRODUCTOS*/
 .contenedor {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 665;
+    font-style: normal;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -191,16 +123,7 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
     padding: 10px;
-    text-align: center;
     width: 200px;
-    cursor: default;
-    transition: all 400ms ease;
-}
-
-.item:hover{
-
-    box-shadow: 5px 5px 25px rgba(20, 20, 20, 0.548);
-    transform: translate(0.3s);
 }
 
 .item .titulo-item {
@@ -213,7 +136,6 @@ body {
 }
 
 .item .img-item {
-    box-shadow: 1px 1px 5px rgba(20, 20, 20, 0.548);
     border-radius: 10px;
     height: 150px;
     width: 100%;
@@ -222,10 +144,15 @@ body {
 }
 
 .item .precio-item {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 665;
+    font-style: normal;
     display: block;
     font-size: 18px;
+    margin-top: 10px;
     margin-bottom: 10px;
-    color: #333;
+    color: #000000;
 }
 
 .quantity-controls {
@@ -236,15 +163,17 @@ body {
 }
 
 .quantity-controls .quantity-btn {
-    background: #fa8b42;
+    background: #ffd622;
     border: none;
-    color: #fff;
+    border-radius: 5px;
+    color: #000000;
     cursor: pointer;
     padding: 5px 10px;
 }
 
 .quantity-controls .quantity-btn:hover {
-    background: #ffd622;
+    color: #ffd622;
+    background: #202020;
 }
 
 .quantity-controls .quantity {
@@ -292,7 +221,7 @@ body {
 }
 
 .cart-item button {
-    background: #fa8b42;
+    background: #ffd622;
     border: none;
     color: white;
     padding: 5px 10px;
@@ -300,7 +229,7 @@ body {
 }
 
 .cart-item button:hover {
-    background: #e07b37;
+    background: #ffd622;
 }
 
 #cart-total {
@@ -309,7 +238,7 @@ body {
 }
 
 .pay-btn {
-    background-color: #fa8b42;
+    background-color: #ffd622;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -319,25 +248,5 @@ body {
 }
 
 .pay-btn:hover {
-    background-color: #e07b37;
-}
-
-
-button {
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
     background-color: #ffd622;
-    color: #202020;
-    border: none;
-    padding: 10px 20px;
-    font-size: 12px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #202020;
-    color: #ffd622;
 }

@@ -42,7 +42,7 @@
     font-optical-sizing: auto;
     font-weight: 665;
     font-style: normal;
-    color: #fffb05;
+    color: #ffd622;
     font-size: 15px;
 }
 
@@ -70,8 +70,8 @@
 }
 
 .contenido-header nav ul li a:hover {
-    background-color: #fffb05;
-    color: #000000;
+    background-color: #ffd622;
+    color: #202020;
 }
 
 /*icons*/
@@ -84,7 +84,7 @@
 }
 
 .contenido-header .icons a:hover {
-    color: #fffb05;
+    color: #ffd622;
 }
 
 /*imagen fondo*/
@@ -129,8 +129,8 @@
     font-optical-sizing: auto;
     font-weight: 665;
     font-style: normal;
-    background-color: #fffb05;
-    color: #000000;
+    background-color: #ffd622;
+    color: #202020;
     border: none;
     padding: 10px 20px;
     font-size: 12px;
@@ -139,7 +139,7 @@
 }
 
 #inicio .fondo button:hover {
-    background-color: #070707;
+    background-color: #202020;
 }
 
 /* Dispositivos tablet (pantallas de 768px o menos) */

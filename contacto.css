@@ -55,7 +55,7 @@ body {
     font-style: normal;
     display: block;
     text-decoration: none;
-    color: #fffb05;
+    color: #ffd622;
     font-size: 15px;
 }
 
@@ -82,8 +82,8 @@ body {
 }
 
 .contenido-header nav ul li a:hover {
-    background-color: #fffb05;
-    color: #000000;
+    background-color: #ffd622;
+    color: #202020;
 }
 
 .contenido-header .icons a {
@@ -95,7 +95,7 @@ body {
 }
 
 .contenido-header .icons a:hover {
-    color: #fffb05;
+    color: #ffd622;
 }
 
 /* Dispositivos tablet (pantallas de 768px o menos) */
@@ -225,7 +225,7 @@ body {
 }
 
 .fa-brands:hover {
-    color: #e62e2E;
+    color: #ffd622;
 }
 
 .pie-pagina .grupo-2 {
@@ -235,10 +235,10 @@ body {
     font-style: normal;
     display: block;
     text-decoration: none;
-    background-color: #fffb05;
+    background-color: #ffd622;
     padding: 10px;
     text-align: center;
-    color: #000000;
+    color: #202020;
 }
 
 .pie-pagina .grupo-1 .contacto {
